@@ -45,6 +45,10 @@
 ---------------------------------------------------------- 
 */
 
+body {
+    background-color: #101011;
+    font-family: 'Josefin Sans', sans-serif;
+}
 
 
 /* 
@@ -62,6 +66,65 @@
 */
 
 
+.app {
+    background-color: #48ff00;
+    min-height: 300px;
+}
+
+#item-input {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 30px;
+    padding: 5px;
+}
+
+.container {
+    background-color: #333030;
+    width: 70%;
+    margin: 50px auto;
+    align-items: center;
+}
+
+h1 {
+    color: black;
+    padding: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: bold;
+    font-size: 50px;
+}
+
+
+
+#compras-img {
+    align-items: center;
+    display: block;
+    margin: 10px auto;
+    padding-top: 20px;
+    height: 200px;
+}
+
+#btn-adicionar {
+    cursor: pointer;
+    border: none;
+    width: 110px;
+    height: 30px;
+    margin-left: 20px;
+}
+
+li {
+    padding: 5px;
+}
+
+.remove {
+    border: none;
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 5px;
+    width: 30px;
+    font-weight: bold;
+}
 
 /* 
 ----------------------------------------------------------
@@ -86,6 +149,49 @@
 */
 
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 680px) {
+
+    .app {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+
+    #item-input {
+        display: block;
+        margin: 10px auto;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+    #btn-adicionar {
+        display: block;
+        margin: 5px auto;
+        margin-bottom: 16px;
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+    #compras-img {
+        height: 15vh;
+    }
+
+}
+
+@media screen and (max-width: 310px) {
+
+    #compras-img {
+        display: none;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
 
 }
